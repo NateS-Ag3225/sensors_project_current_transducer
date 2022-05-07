@@ -30,7 +30,7 @@ void setup() {
   Serial.begin(115200);
 
   //Start the display and clear it if anything is on it
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR);
   display.clearDisplay();
 
   //Set the analog pin as an input to start reading in values
